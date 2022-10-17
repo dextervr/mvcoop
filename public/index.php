@@ -4,4 +4,4 @@
 
 ?>
 
-<a href="http://mvc-331306-framework.org/fruits/index"><h1>link</h1></a>
+<a href="http://mvc-oop-toets.com/people/index"><h1>link</h1></a>

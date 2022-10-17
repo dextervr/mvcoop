@@ -1,15 +1,18 @@
 <?php
 
 class RichPeople {
-    public string $name;
-    public string $net;
-    public int $age;
-    public string $company;
+        private $db;
 
-    public function __construct(int $id, string $name, string $color, float $price) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->color = $color;
-        $this->price = $price;
-    }
+        public function __construct() {
+            $this->db = new Database;
+        }
+
+
+        public function getPeople() {
+            $this->db->query("SELECT * FROM RichestPeople");
+
+            $result = $this->db->resultSet();
+
+            return $result;
+        }
 }
